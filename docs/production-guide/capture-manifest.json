@@ -1,0 +1,2679 @@
+{
+  "synthetic_only": true,
+  "database": "verify_production_guide_20261123",
+  "release_id": "87eb0e5d72d1a3e1c28abe3bdb5b60d03bfd74ed7775f89b8ce216dbe82f8431",
+  "formValues": {
+    "01-business": [
+      {
+        "name": "name",
+        "label": "نام کسب‌وکار *",
+        "value": "فابریکهٔ آموزشی رهنمای تولید"
+      },
+      {
+        "name": "slug",
+        "label": "شناسه لاتین یکتا *",
+        "value": "production-guide-20261123"
+      },
+      {
+        "name": "manufacturing_mode",
+        "label": "شیوه تولید *",
+        "value": "ثبت مصرف واقعی (بدون فرمول)"
+      },
+      {
+        "name": "legal_name",
+        "label": "نام شخصیت قانونی (اختیاری)",
+        "value": ""
+      },
+      {
+        "name": "location_name",
+        "label": "نام موقعیت اولیه *",
+        "value": "فابریکهٔ آموزشی"
+      },
+      {
+        "name": "warehouse_name",
+        "label": "نام انبار اولیه *",
+        "value": "گدام مواد و محصول فابریکه"
+      }
+    ],
+    "03-floor": [
+      {
+        "name": "name",
+        "label": "نام انبار *",
+        "value": "کف تولید آموزشی"
+      },
+      {
+        "name": "location",
+        "label": "موقعیت *",
+        "value": "فابریکهٔ آموزشی"
+      },
+      {
+        "name": "kind",
+        "label": "نوع انبار *",
+        "value": "کف تولید"
+      }
+    ],
+    "04-herat": [
+      {
+        "name": "name",
+        "label": "نام *",
+        "value": "دفتر مرکزی هرات - آموزشی"
+      },
+      {
+        "name": "code",
+        "label": "کد *",
+        "value": "HRT"
+      }
+    ],
+    "05-herat-store": [
+      {
+        "name": "name",
+        "label": "نام انبار *",
+        "value": "گدام فروش هرات - آموزشی"
+      },
+      {
+        "name": "location",
+        "label": "موقعیت *",
+        "value": "دفتر مرکزی هرات - آموزشی"
+      },
+      {
+        "name": "kind",
+        "label": "نوع انبار *",
+        "value": "انبار"
+      }
+    ],
+    "06-raw-a": [
+      {
+        "name": "code",
+        "label": "کد محصول *",
+        "value": "RAW-A"
+      },
+      {
+        "name": "name",
+        "label": "نام محصول *",
+        "value": "مواد آموزشی الف"
+      },
+      {
+        "name": "kind",
+        "label": "نوع *",
+        "value": "مواد اولیه"
+      },
+      {
+        "name": "line",
+        "label": "خط محصول *",
+        "value": "اسفنج"
+      },
+      {
+        "name": "unit",
+        "label": "واحد *",
+        "value": "کیلوگرام"
+      },
+      {
+        "name": "price",
+        "label": "نرخ فروش (AFN)",
+        "value": "0"
+      }
+    ],
+    "07-raw-b": [
+      {
+        "name": "code",
+        "label": "کد محصول *",
+        "value": "RAW-B"
+      },
+      {
+        "name": "name",
+        "label": "نام محصول *",
+        "value": "مواد آموزشی ب"
+      },
+      {
+        "name": "kind",
+        "label": "نوع *",
+        "value": "مواد اولیه"
+      },
+      {
+        "name": "line",
+        "label": "خط محصول *",
+        "value": "اسفنج"
+      },
+      {
+        "name": "unit",
+        "label": "واحد *",
+        "value": "کیلوگرام"
+      },
+      {
+        "name": "price",
+        "label": "نرخ فروش (AFN)",
+        "value": "0"
+      }
+    ],
+    "08-sponge": [
+      {
+        "name": "code",
+        "label": "کد محصول *",
+        "value": "SP45"
+      },
+      {
+        "name": "name",
+        "label": "نام محصول *",
+        "value": "اسفنج 45 کیلو گرام"
+      },
+      {
+        "name": "kind",
+        "label": "نوع *",
+        "value": "محصول نهایی"
+      },
+      {
+        "name": "line",
+        "label": "خط محصول *",
+        "value": "اسفنج"
+      },
+      {
+        "name": "unit",
+        "label": "واحد *",
+        "value": "سانتی‌متر"
+      },
+      {
+        "name": "price",
+        "label": "نرخ فروش (AFN)",
+        "value": "500"
+      }
+    ],
+    "09-top": [
+      {
+        "name": "code",
+        "label": "کد محصول *",
+        "value": "TOP45"
+      },
+      {
+        "name": "name",
+        "label": "نام محصول *",
+        "value": "سربلوک 45 کیلو گرام"
+      },
+      {
+        "name": "kind",
+        "label": "نوع *",
+        "value": "فرآورده جانبی"
+      },
+      {
+        "name": "line",
+        "label": "خط محصول *",
+        "value": "اسفنج"
+      },
+      {
+        "name": "unit",
+        "label": "واحد *",
+        "value": "عدد"
+      },
+      {
+        "name": "price",
+        "label": "نرخ فروش (AFN)",
+        "value": "700"
+      }
+    ],
+    "10-bottom": [
+      {
+        "name": "code",
+        "label": "کد محصول *",
+        "value": "BOTTOM"
+      },
+      {
+        "name": "name",
+        "label": "نام محصول *",
+        "value": "کف بلوک"
+      },
+      {
+        "name": "kind",
+        "label": "نوع *",
+        "value": "فرآورده جانبی"
+      },
+      {
+        "name": "line",
+        "label": "خط محصول *",
+        "value": "اسفنج"
+      },
+      {
+        "name": "unit",
+        "label": "واحد *",
+        "value": "عدد"
+      },
+      {
+        "name": "price",
+        "label": "نرخ فروش (AFN)",
+        "value": "600"
+      }
+    ],
+    "11-raw-glue": [
+      {
+        "name": "code",
+        "label": "کد محصول *",
+        "value": "RAW-GLUE"
+      },
+      {
+        "name": "name",
+        "label": "نام محصول *",
+        "value": "مواد چسپ آموزشی"
+      },
+      {
+        "name": "kind",
+        "label": "نوع *",
+        "value": "مواد اولیه"
+      },
+      {
+        "name": "line",
+        "label": "خط محصول *",
+        "value": "چسپ"
+      },
+      {
+        "name": "unit",
+        "label": "واحد *",
+        "value": "کیلوگرام"
+      },
+      {
+        "name": "price",
+        "label": "نرخ فروش (AFN)",
+        "value": "0"
+      }
+    ],
+    "12-glue": [
+      {
+        "name": "code",
+        "label": "کد محصول *",
+        "value": "GLUE"
+      },
+      {
+        "name": "name",
+        "label": "نام محصول *",
+        "value": "چسپ آموزشی"
+      },
+      {
+        "name": "kind",
+        "label": "نوع *",
+        "value": "محصول نهایی"
+      },
+      {
+        "name": "line",
+        "label": "خط محصول *",
+        "value": "چسپ"
+      },
+      {
+        "name": "unit",
+        "label": "واحد *",
+        "value": "کیلوگرام"
+      },
+      {
+        "name": "price",
+        "label": "نرخ فروش (AFN)",
+        "value": "200"
+      }
+    ],
+    "13-supplier": [
+      {
+        "name": "kind",
+        "label": "نوع *",
+        "value": "تأمین‌کننده"
+      },
+      {
+        "name": "name",
+        "label": "نام *",
+        "value": "تأمین‌کنندهٔ آموزشی مواد"
+      },
+      {
+        "name": "phone",
+        "label": "تلفن",
+        "value": "0000000000"
+      },
+      {
+        "name": "address",
+        "label": "آدرس",
+        "value": "آدرس نمونه؛ معلومات واقعی نیست"
+      },
+      {
+        "name": "delivery_address",
+        "label": "آدرس تحویل کالا",
+        "value": ""
+      },
+      {
+        "name": "registration_number",
+        "label": "شماره ثبت / نمبر تشخیصیه مالیه",
+        "value": ""
+      },
+      {
+        "name": "notes",
+        "label": "یادداشت",
+        "value": "حساب صرفاً آموزشی برای رهنمای تولید"
+      },
+      {
+        "name": "group_name",
+        "label": "گروه تجارتی",
+        "value": ""
+      },
+      {
+        "name": "payment_terms_days",
+        "label": "مهلت پرداخت (روز) *",
+        "value": "30"
+      }
+    ],
+    "14-receipt": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "warehouse",
+        "label": "انبار دریافت *",
+        "value": "گدام مواد و محصول فابریکه"
+      },
+      {
+        "name": "supplier",
+        "label": "تأمین‌کننده",
+        "value": "تأمین‌کنندهٔ آموزشی مواد"
+      },
+      {
+        "name": "reference",
+        "label": "مرجع خرید",
+        "value": ""
+      },
+      {
+        "name": "order",
+        "label": "سفارش خرید مرتبط",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "product-0",
+        "label": "محصول / مواد *",
+        "value": "مواد آموزشی الف"
+      },
+      {
+        "name": "quantity-0",
+        "label": "مقدار در واحد اصلی *",
+        "value": "150"
+      },
+      {
+        "name": "unit_cost-0",
+        "label": "بهای هر واحد (AFN) *",
+        "value": "100"
+      },
+      {
+        "name": "lot-0",
+        "label": "لات مواد دریافتی",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "product-1",
+        "label": "محصول / مواد *",
+        "value": "مواد آموزشی ب"
+      },
+      {
+        "name": "quantity-1",
+        "label": "مقدار در واحد اصلی *",
+        "value": "150"
+      },
+      {
+        "name": "unit_cost-1",
+        "label": "بهای هر واحد (AFN) *",
+        "value": "100"
+      },
+      {
+        "name": "lot-1",
+        "label": "لات مواد دریافتی",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "product-2",
+        "label": "محصول / مواد *",
+        "value": "مواد چسپ آموزشی"
+      },
+      {
+        "name": "quantity-2",
+        "label": "مقدار در واحد اصلی *",
+        "value": "50"
+      },
+      {
+        "name": "unit_cost-2",
+        "label": "بهای هر واحد (AFN) *",
+        "value": "100"
+      },
+      {
+        "name": "lot-2",
+        "label": "لات مواد دریافتی",
+        "value": "انتخاب کنید"
+      }
+    ],
+    "16-bill": [
+      {
+        "name": "receipt",
+        "label": "رسید خرید *",
+        "value": "PRODUCTION-GUIDE-20261123-PURCHASE_RECEIVE-000001"
+      },
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "supplier_reference",
+        "label": "شماره بل تأمین‌کننده *",
+        "value": "GUIDE-BILL-01"
+      },
+      {
+        "name": "due_date_jalali",
+        "label": "تاریخ سررسید",
+        "value": ""
+      },
+      {
+        "name": "bill-quantity-0",
+        "label": "مقدار این بل",
+        "value": "150"
+      },
+      {
+        "name": "bill-quantity-1",
+        "label": "مقدار این بل",
+        "value": "150"
+      },
+      {
+        "name": "bill-quantity-2",
+        "label": "مقدار این بل",
+        "value": "50"
+      }
+    ],
+    "18-issue-a": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "warehouse",
+        "label": "از انبار *",
+        "value": "گدام مواد و محصول فابریکه"
+      },
+      {
+        "name": "destination",
+        "label": "به انبار کف تولید *",
+        "value": "کف تولید آموزشی"
+      },
+      {
+        "name": "product",
+        "label": "مواد *",
+        "value": "مواد آموزشی الف"
+      },
+      {
+        "name": "quantity",
+        "label": "مقدار *",
+        "value": "80"
+      },
+      {
+        "name": "reason",
+        "label": "شرح",
+        "value": "صدور مواد الف برای بچ آموزشی"
+      }
+    ],
+    "19-issue-b": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "warehouse",
+        "label": "از انبار *",
+        "value": "گدام مواد و محصول فابریکه"
+      },
+      {
+        "name": "destination",
+        "label": "به انبار کف تولید *",
+        "value": "کف تولید آموزشی"
+      },
+      {
+        "name": "product",
+        "label": "مواد *",
+        "value": "مواد آموزشی ب"
+      },
+      {
+        "name": "quantity",
+        "label": "مقدار *",
+        "value": "80"
+      },
+      {
+        "name": "reason",
+        "label": "شرح",
+        "value": "صدور مواد ب برای بچ آموزشی"
+      }
+    ],
+    "20-start": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "warehouse",
+        "label": "انبار تولید *",
+        "value": "کف تولید آموزشی"
+      },
+      {
+        "name": "work_order",
+        "label": "برنامه تولید مرتبط",
+        "value": "انتخاب کنید"
+      }
+    ],
+    "21-consume-a": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "batch",
+        "label": "بچ در جریان *",
+        "value": "PRODUCTION-GUIDE-20261123-PRODUCTION_START-000001"
+      },
+      {
+        "name": "warehouse",
+        "label": "انبار مصرف *",
+        "value": "کف تولید آموزشی"
+      },
+      {
+        "name": "product",
+        "label": "مواد اولیه *",
+        "value": "مواد آموزشی الف"
+      },
+      {
+        "name": "quantity",
+        "label": "مقدار مصرف واقعی *",
+        "value": "60"
+      }
+    ],
+    "22-consume-b": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "batch",
+        "label": "بچ در جریان *",
+        "value": "PRODUCTION-GUIDE-20261123-PRODUCTION_START-000001"
+      },
+      {
+        "name": "warehouse",
+        "label": "انبار مصرف *",
+        "value": "کف تولید آموزشی"
+      },
+      {
+        "name": "product",
+        "label": "مواد اولیه *",
+        "value": "مواد آموزشی ب"
+      },
+      {
+        "name": "quantity",
+        "label": "مقدار مصرف واقعی *",
+        "value": "60"
+      }
+    ],
+    "24-return-a": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "warehouse",
+        "label": "از انبار کف تولید *",
+        "value": "کف تولید آموزشی"
+      },
+      {
+        "name": "destination",
+        "label": "به انبار *",
+        "value": "گدام مواد و محصول فابریکه"
+      },
+      {
+        "name": "product",
+        "label": "مواد *",
+        "value": "مواد آموزشی الف"
+      },
+      {
+        "name": "quantity",
+        "label": "مقدار *",
+        "value": "20"
+      },
+      {
+        "name": "reason",
+        "label": "شرح",
+        "value": "۲۰ کیلوگرام مواد الف استفاده نشده است؛ به گدام برمی‌گردد"
+      }
+    ],
+    "25-return-b": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "warehouse",
+        "label": "از انبار کف تولید *",
+        "value": "کف تولید آموزشی"
+      },
+      {
+        "name": "destination",
+        "label": "به انبار *",
+        "value": "گدام مواد و محصول فابریکه"
+      },
+      {
+        "name": "product",
+        "label": "مواد *",
+        "value": "مواد آموزشی ب"
+      },
+      {
+        "name": "quantity",
+        "label": "مقدار *",
+        "value": "20"
+      },
+      {
+        "name": "reason",
+        "label": "شرح",
+        "value": "۲۰ کیلوگرام مواد ب استفاده نشده است؛ به گدام برمی‌گردد"
+      }
+    ],
+    "26-complete": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "batch",
+        "label": "بچ در جریان *",
+        "value": "PRODUCTION-GUIDE-20261123-PRODUCTION_START-000001"
+      },
+      {
+        "name": "warehouse",
+        "label": "انبار خروجی *",
+        "value": "گدام مواد و محصول فابریکه"
+      },
+      {
+        "name": "product",
+        "label": "محصول خروجی *",
+        "value": "اسفنج 45 کیلو گرام"
+      },
+      {
+        "name": "count",
+        "label": "تعداد بلوک‌های هم‌اندازه *",
+        "value": "1"
+      },
+      {
+        "name": "length_mm",
+        "label": "طول هر بلوک (mm) *",
+        "value": "2000"
+      },
+      {
+        "name": "width_mm",
+        "label": "عرض هر بلوک (mm) *",
+        "value": "1000"
+      },
+      {
+        "name": "height_mm",
+        "label": "ارتفاع هر بلوک (mm) *",
+        "value": "1100"
+      },
+      {
+        "name": "allocated_cost",
+        "label": "بهای تخصیص به این تکمیل (خالی = تمام WIP)",
+        "value": "12000"
+      },
+      {
+        "name": "abnormal_loss",
+        "label": "زیان غیرعادی تأییدشده (AFN) *",
+        "value": "1000"
+      },
+      {
+        "name": "status",
+        "label": "وضعیت خروجی *",
+        "value": "در حال عمل‌آوری"
+      }
+    ],
+    "28-quality": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "block",
+        "label": "بلوک تحت بررسی *",
+        "value": "PRODUCTION-GUIDE-20261123-PRODUCTION_COMPLETE-000001-1-1 · curing"
+      },
+      {
+        "name": "reason",
+        "label": "یادداشت تأیید کیفیت *",
+        "value": "صرفاً نمونهٔ آموزشی: عمل‌آوری، ظاهر و اندازه با مسؤول کیفیت بررسی شد"
+      }
+    ],
+    "29-trim": [
+      {
+        "name": "block",
+        "label": "بلوک اولیه *",
+        "value": "PRODUCTION-GUIDE-20261123-PRODUCTION_COMPLETE-000001-1-1 · ۱٬۱۰۰ mm"
+      },
+      {
+        "name": "main_height_mm",
+        "label": "ارتفاع بلوک آماده فروش (mm) *",
+        "value": "1000"
+      },
+      {
+        "name": "top_height_mm",
+        "label": "سربلوک (mm) *",
+        "value": "40"
+      },
+      {
+        "name": "bottom_height_mm",
+        "label": "کف بلوک (mm) *",
+        "value": "40"
+      },
+      {
+        "name": "loss_mm",
+        "label": "ضایعات ارتفاع (mm) *",
+        "value": "20"
+      },
+      {
+        "name": "main_cost",
+        "label": "بهای خروجی اصلی (اختیاری)",
+        "value": "10000"
+      },
+      {
+        "name": "trim-product-0",
+        "label": "محصول سربلوک / کف بلوک",
+        "value": "سربلوک 45 کیلو گرام"
+      },
+      {
+        "name": "trim-qty-0",
+        "label": "مقدار در واحد محصول",
+        "value": "1"
+      },
+      {
+        "name": "trim-cost-0",
+        "label": "ارزش دفتری خروجی (AFN)",
+        "value": "500"
+      },
+      {
+        "name": "trim-product-1",
+        "label": "محصول سربلوک / کف بلوک",
+        "value": "کف بلوک"
+      },
+      {
+        "name": "trim-qty-1",
+        "label": "مقدار در واحد محصول",
+        "value": "1"
+      },
+      {
+        "name": "trim-cost-1",
+        "label": "ارزش دفتری خروجی (AFN)",
+        "value": "500"
+      }
+    ],
+    "32-transfer": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "warehouse",
+        "label": "از انبار *",
+        "value": "گدام مواد و محصول فابریکه"
+      },
+      {
+        "name": "destination",
+        "label": "به انبار *",
+        "value": "گدام فروش هرات - آموزشی"
+      },
+      {
+        "name": "internal_charge",
+        "label": "قیمت داخلی شعبه (۰ = انتقال ساده) *",
+        "value": "0"
+      },
+      {
+        "name": "product-0",
+        "label": "محصول *",
+        "value": "اسفنج 45 کیلو گرام"
+      },
+      {
+        "name": "quantity-0",
+        "label": "مقدار در واحد اصلی *",
+        "value": "100"
+      },
+      {
+        "name": "block-0",
+        "label": "بلوک (برای اسفنج)",
+        "value": "PRODUCTION-GUIDE-20261123-PRODUCTION_COMPLETE-000001-1-1 · ۱۰۰ cm"
+      }
+    ],
+    "34-receive-transfer": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "transfer",
+        "label": "سند انتقال *",
+        "value": "PRODUCTION-GUIDE-20261123-TRANSFER_DISPATCH-000001"
+      },
+      {
+        "name": "receive-0",
+        "label": "مقدار این مرحله *",
+        "value": "100"
+      }
+    ],
+    "36-sale-preview": [
+      {
+        "name": "order",
+        "label": "سفارش فروش مرتبط",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "warehouse",
+        "label": "انبار فروش *",
+        "value": "گدام فروش هرات - آموزشی"
+      },
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "customer_name",
+        "label": "نام مشتری حضوری",
+        "value": "مشتری نمونه - فقط پیش‌نمایش"
+      },
+      {
+        "name": "phone",
+        "label": "شماره تماس",
+        "value": "0000000000"
+      },
+      {
+        "name": "product-0",
+        "label": "محصول *",
+        "value": "اسفنج 45 کیلو گرام"
+      },
+      {
+        "name": "block-0",
+        "label": "بلوک مشخص *",
+        "value": "PRODUCTION-GUIDE-20261123-PRODUCTION_COMPLETE-000001-1-1 · ۱۰۰ cm · ۲٬۰۰۰×۱٬۰۰۰ mm"
+      },
+      {
+        "name": "thickness-0",
+        "label": "ضخامت هر ورق (mm) *",
+        "value": "22"
+      },
+      {
+        "name": "thickness-unit-0",
+        "label": "واحد ضخامت",
+        "value": "mm"
+      },
+      {
+        "name": "sheets-0",
+        "label": "تعداد ورق *",
+        "value": "1"
+      },
+      {
+        "name": "price-0",
+        "label": "نرخ هر cm (AFN) *",
+        "value": "500"
+      },
+      {
+        "name": "cutting-loss-0",
+        "label": "ضایعات کل برش (mm) *",
+        "value": "0"
+      },
+      {
+        "name": "tax_rule",
+        "label": "قاعده مالیاتی مؤثر (اختیاری)",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "notes",
+        "label": "یادداشت مشتری / آدرس",
+        "value": ""
+      },
+      {
+        "name": "sale-payment-method",
+        "label": "روش دریافت *",
+        "value": "صندوق نقدی"
+      },
+      {
+        "name": "paid",
+        "label": "مبلغ دریافت فعلی (AFN) *",
+        "value": "0"
+      },
+      {
+        "name": "credit_override_reason",
+        "label": "دلیل استثنای نسیه",
+        "value": ""
+      }
+    ],
+    "37-overhead": [
+      {
+        "name": "expense_account",
+        "label": "حساب مصرف *",
+        "value": "13920 · Production conversion clearing"
+      },
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "location",
+        "label": "موقعیت *",
+        "value": "فابریکهٔ آموزشی"
+      },
+      {
+        "name": "amount",
+        "label": "مبلغ مصرف (AFN) *",
+        "value": "500"
+      },
+      {
+        "name": "cash_account",
+        "label": "حساب پرداخت",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "supplier",
+        "label": "تأمین‌کننده نسیه (اختیاری)",
+        "value": "تأمین‌کنندهٔ آموزشی مواد"
+      },
+      {
+        "name": "description",
+        "label": "شرح مصرف *",
+        "value": "سربار نمونهٔ بچ چسپ؛ پرداخت نشده و باید فقط یک‌بار جذب شود"
+      },
+      {
+        "name": "production_cost",
+        "label": "سربار واقعی تولید برای جذب در بچ",
+        "value": "بلی"
+      },
+      {
+        "name": "line",
+        "label": "خط محصول *",
+        "value": "چسپ"
+      }
+    ],
+    "38-simple-foam": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "warehouse",
+        "label": "انبار تولید و خروجی *",
+        "value": "گدام مواد و محصول فابریکه"
+      },
+      {
+        "name": "work_order",
+        "label": "برنامه تولید مرتبط",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "input-0",
+        "label": "مواد اولیه *",
+        "value": "مواد آموزشی الف"
+      },
+      {
+        "name": "input-qty-0",
+        "label": "مقدار مصرف در واحد اصلی *",
+        "value": "10"
+      },
+      {
+        "name": "input-lot-0",
+        "label": "لات مصرفی (خالی = انتخاب خودکار)",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "input-1",
+        "label": "مواد اولیه *",
+        "value": "مواد آموزشی ب"
+      },
+      {
+        "name": "input-qty-1",
+        "label": "مقدار مصرف در واحد اصلی *",
+        "value": "10"
+      },
+      {
+        "name": "input-lot-1",
+        "label": "لات مصرفی (خالی = انتخاب خودکار)",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "output-0",
+        "label": "محصول تولیدشده *",
+        "value": "اسفنج 45 کیلو گرام"
+      },
+      {
+        "name": "length_mm-0-0",
+        "label": "طول *",
+        "value": "2000"
+      },
+      {
+        "name": "width_mm-0-0",
+        "label": "عرض *",
+        "value": "1000"
+      },
+      {
+        "name": "height_mm-0-0",
+        "label": "ارتفاع *",
+        "value": "500"
+      },
+      {
+        "name": "labor_cost",
+        "label": "کار مستقیم واجد شرایط (AFN) *",
+        "value": "0"
+      },
+      {
+        "name": "overhead_cost",
+        "label": "سربار تولید واجد شرایط (AFN) *",
+        "value": "0"
+      },
+      {
+        "name": "abnormal_loss",
+        "label": "زیان غیرعادی تأییدشده (AFN) *",
+        "value": "0"
+      },
+      {
+        "name": "conversion_sources",
+        "label": "شناسه اسناد کار و سربار ثبت‌شده (با کاما جدا)",
+        "value": ""
+      }
+    ],
+    "39-adhesive": [
+      {
+        "name": "date_jalali",
+        "label": "تاریخ سند *",
+        "value": "۱۴۰۵/۰۹/۰۲"
+      },
+      {
+        "name": "warehouse",
+        "label": "انبار تولید و خروجی *",
+        "value": "گدام مواد و محصول فابریکه"
+      },
+      {
+        "name": "work_order",
+        "label": "برنامه تولید مرتبط",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "input-0",
+        "label": "مواد اولیه *",
+        "value": "مواد چسپ آموزشی"
+      },
+      {
+        "name": "input-qty-0",
+        "label": "مقدار مصرف در واحد اصلی *",
+        "value": "20"
+      },
+      {
+        "name": "input-lot-0",
+        "label": "لات مصرفی (خالی = انتخاب خودکار)",
+        "value": "انتخاب کنید"
+      },
+      {
+        "name": "output-0",
+        "label": "محصول تولیدشده *",
+        "value": "چسپ آموزشی"
+      },
+      {
+        "name": "output-qty-0",
+        "label": "مقدار خالص (kg) *",
+        "value": "20"
+      },
+      {
+        "name": "labor_cost",
+        "label": "کار مستقیم واجد شرایط (AFN) *",
+        "value": "0"
+      },
+      {
+        "name": "overhead_cost",
+        "label": "سربار تولید واجد شرایط (AFN) *",
+        "value": "500"
+      },
+      {
+        "name": "abnormal_loss",
+        "label": "زیان غیرعادی تأییدشده (AFN) *",
+        "value": "0"
+      },
+      {
+        "name": "conversion_sources",
+        "label": "شناسه اسناد کار و سربار ثبت‌شده (با کاما جدا)",
+        "value": "15"
+      }
+    ]
+  },
+  "business": 2,
+  "items": {
+    "factory": {
+      "id": 2,
+      "name": "فابریکهٔ آموزشی",
+      "code": "MAIN"
+    },
+    "store": {
+      "id": 2,
+      "location": 2,
+      "name": "گدام مواد و محصول فابریکه",
+      "kind": "store"
+    },
+    "03-floor": {
+      "id": 3,
+      "location": 2,
+      "name": "کف تولید آموزشی",
+      "kind": "floor"
+    },
+    "04-herat": {
+      "id": 3,
+      "name": "دفتر مرکزی هرات - آموزشی",
+      "code": "HRT"
+    },
+    "05-herat-store": {
+      "id": 4,
+      "location": 3,
+      "name": "گدام فروش هرات - آموزشی",
+      "kind": "store"
+    },
+    "06-raw-a": {
+      "id": 1,
+      "code": "RAW-A",
+      "name": "مواد آموزشی الف",
+      "kind": "raw",
+      "line": "sponge",
+      "unit": "kg",
+      "price": "0",
+      "active": true,
+      "aliases": ""
+    },
+    "07-raw-b": {
+      "id": 2,
+      "code": "RAW-B",
+      "name": "مواد آموزشی ب",
+      "kind": "raw",
+      "line": "sponge",
+      "unit": "kg",
+      "price": "0",
+      "active": true,
+      "aliases": ""
+    },
+    "08-sponge": {
+      "id": 3,
+      "code": "SP45",
+      "name": "اسفنج 45 کیلو گرام",
+      "kind": "finished",
+      "line": "sponge",
+      "unit": "cm",
+      "price": "500",
+      "active": true,
+      "aliases": ""
+    },
+    "09-top": {
+      "id": 4,
+      "code": "TOP45",
+      "name": "سربلوک 45 کیلو گرام",
+      "kind": "trim",
+      "line": "sponge",
+      "unit": "each",
+      "price": "700",
+      "active": true,
+      "aliases": ""
+    },
+    "10-bottom": {
+      "id": 5,
+      "code": "BOTTOM",
+      "name": "کف بلوک",
+      "kind": "trim",
+      "line": "sponge",
+      "unit": "each",
+      "price": "600",
+      "active": true,
+      "aliases": ""
+    },
+    "11-raw-glue": {
+      "id": 6,
+      "code": "RAW-GLUE",
+      "name": "مواد چسپ آموزشی",
+      "kind": "raw",
+      "line": "adhesive",
+      "unit": "kg",
+      "price": "0",
+      "active": true,
+      "aliases": ""
+    },
+    "12-glue": {
+      "id": 7,
+      "code": "GLUE",
+      "name": "چسپ آموزشی",
+      "kind": "finished",
+      "line": "adhesive",
+      "unit": "kg",
+      "price": "200",
+      "active": true,
+      "aliases": ""
+    },
+    "13-supplier": {
+      "id": 1,
+      "kind": "supplier",
+      "name": "تأمین‌کنندهٔ آموزشی مواد",
+      "phone": "0000000000",
+      "address": "آدرس نمونه؛ معلومات واقعی نیست",
+      "notes": "حساب صرفاً آموزشی برای رهنمای تولید",
+      "group_name": "",
+      "registration_number": "",
+      "delivery_address": "",
+      "contacts": [],
+      "credit_limit": null,
+      "payment_terms_days": 30,
+      "credit_hold": false,
+      "block_overdue": false
+    }
+  },
+  "documents": {
+    "14-receipt": {
+      "id": 1,
+      "kind": "purchase_receive",
+      "number": "PRODUCTION-GUIDE-20261123-PURCHASE_RECEIVE-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 2,
+      "party": 1,
+      "employee": null,
+      "reference": null,
+      "amount": "35000.00",
+      "data": {
+        "warehouse": "2",
+        "supplier": "1",
+        "date": "2026-11-23",
+        "lines": [
+          {
+            "product": "1",
+            "quantity": "150",
+            "unit_cost": "100"
+          },
+          {
+            "product": "2",
+            "quantity": "150",
+            "unit_cost": "100"
+          },
+          {
+            "product": "6",
+            "quantity": "50",
+            "unit_cost": "100"
+          }
+        ]
+      },
+      "result": {
+        "lines": [
+          {
+            "index": 0,
+            "product": 1,
+            "product_name": "مواد آموزشی الف",
+            "quantity": "150",
+            "cost": "15000.00",
+            "unit_cost": "100.00",
+            "billed_quantity": "0"
+          },
+          {
+            "index": 1,
+            "product": 2,
+            "product_name": "مواد آموزشی ب",
+            "quantity": "150",
+            "cost": "15000.00",
+            "unit_cost": "100.00",
+            "billed_quantity": "0"
+          },
+          {
+            "index": 2,
+            "product": 6,
+            "product_name": "مواد چسپ آموزشی",
+            "quantity": "50",
+            "cost": "5000.00",
+            "unit_cost": "100.00",
+            "billed_quantity": "0"
+          }
+        ],
+        "total": "35000.00",
+        "landed_cost": "0.00",
+        "clearing": "GRNI",
+        "order": null,
+        "supplier_snapshot": {
+          "name": "تأمین‌کنندهٔ آموزشی مواد",
+          "phone": "0000000000",
+          "address": "آدرس نمونه؛ معلومات واقعی نیست",
+          "delivery_address": "",
+          "registration_number": "",
+          "group_name": ""
+        }
+      },
+      "product_lines": [
+        "adhesive",
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T20:50:06.482558+00:00",
+      "posted_at": "2026-11-22T20:50:06.667224+00:00",
+      "balance": null,
+      "party_name": "تأمین‌کنندهٔ آموزشی مواد",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "16-bill": {
+      "id": 2,
+      "kind": "purchase_bill",
+      "number": "PRODUCTION-GUIDE-20261123-PURCHASE_BILL-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 2,
+      "party": 1,
+      "employee": null,
+      "reference": 1,
+      "amount": "35000.00",
+      "data": {
+        "date": "2026-11-23",
+        "supplier_reference": "GUIDE-BILL-01",
+        "receipt": "1",
+        "lines": [
+          {
+            "index": 0,
+            "quantity": "150"
+          },
+          {
+            "index": 1,
+            "quantity": "150"
+          },
+          {
+            "index": 2,
+            "quantity": "50"
+          }
+        ],
+        "due_date": "2026-12-23",
+        "payment_terms_days_snapshot": 30
+      },
+      "result": {
+        "receipt": 1,
+        "lines": [
+          {
+            "index": 0,
+            "product": 1,
+            "quantity": "150",
+            "cost": "15000.00"
+          },
+          {
+            "index": 1,
+            "product": 2,
+            "quantity": "150",
+            "cost": "15000.00"
+          },
+          {
+            "index": 2,
+            "product": 6,
+            "quantity": "50",
+            "cost": "5000.00"
+          }
+        ],
+        "total": "35000.00",
+        "outstanding": "35000.00",
+        "supplier_snapshot": {
+          "name": "تأمین‌کنندهٔ آموزشی مواد",
+          "phone": "0000000000",
+          "address": "آدرس نمونه؛ معلومات واقعی نیست",
+          "delivery_address": "",
+          "registration_number": "",
+          "group_name": ""
+        }
+      },
+      "product_lines": [
+        "adhesive",
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T20:53:52.182873+00:00",
+      "posted_at": "2026-11-22T20:53:52.307158+00:00",
+      "balance": "35000.00",
+      "party_name": "تأمین‌کنندهٔ آموزشی مواد",
+      "employee_name": "",
+      "related_documents": [
+        {
+          "id": 1,
+          "number": "PRODUCTION-GUIDE-20261123-PURCHASE_RECEIVE-000001",
+          "kind": "purchase_receive",
+          "date": "2026-11-23"
+        }
+      ],
+      "attachments": []
+    },
+    "18-issue-a": {
+      "id": 3,
+      "kind": "material_issue",
+      "number": "PRODUCTION-GUIDE-20261123-MATERIAL_ISSUE-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 2,
+      "party": null,
+      "employee": null,
+      "reference": null,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "warehouse": "2",
+        "destination": "3",
+        "reason": "صدور مواد الف برای بچ آموزشی",
+        "lines": [
+          {
+            "product": "1",
+            "quantity": "80"
+          }
+        ]
+      },
+      "result": {
+        "source": 2,
+        "destination": 3,
+        "lines": [
+          {
+            "product": 1,
+            "quantity": "80",
+            "cost": "8000.00"
+          }
+        ],
+        "consumed": false
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:01:53.495470+00:00",
+      "posted_at": "2026-11-22T21:01:53.690563+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "19-issue-b": {
+      "id": 4,
+      "kind": "material_issue",
+      "number": "PRODUCTION-GUIDE-20261123-MATERIAL_ISSUE-000002",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 2,
+      "party": null,
+      "employee": null,
+      "reference": null,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "warehouse": "2",
+        "destination": "3",
+        "reason": "صدور مواد ب برای بچ آموزشی",
+        "lines": [
+          {
+            "product": "2",
+            "quantity": "80"
+          }
+        ]
+      },
+      "result": {
+        "source": 2,
+        "destination": 3,
+        "lines": [
+          {
+            "product": 2,
+            "quantity": "80",
+            "cost": "8000.00"
+          }
+        ],
+        "consumed": false
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:01:58.527645+00:00",
+      "posted_at": "2026-11-22T21:01:58.667388+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "20-start": {
+      "id": 5,
+      "kind": "production_start",
+      "number": "PRODUCTION-GUIDE-20261123-PRODUCTION_START-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 3,
+      "party": null,
+      "employee": null,
+      "reference": null,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "warehouse": "3"
+      },
+      "result": {
+        "warehouse": 3,
+        "wip_in": "0.00",
+        "wip_out": "0.00",
+        "bom": null,
+        "status": "open"
+      },
+      "product_lines": [],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:02:05.778342+00:00",
+      "posted_at": "2026-11-22T21:02:05.827819+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "21-consume-a": {
+      "id": 6,
+      "kind": "production_consume",
+      "number": "PRODUCTION-GUIDE-20261123-PRODUCTION_CONSUME-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 3,
+      "party": null,
+      "employee": null,
+      "reference": 5,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "batch": "5",
+        "warehouse": "3",
+        "inputs": [
+          {
+            "product": "1",
+            "quantity": "60"
+          }
+        ]
+      },
+      "result": {
+        "batch": 5,
+        "inputs": [
+          {
+            "product": 1,
+            "warehouse": 3,
+            "quantity": "60",
+            "cost": "6000.00"
+          }
+        ],
+        "wip_in": "6000.00",
+        "wip_out": "0.00"
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:02:10.276418+00:00",
+      "posted_at": "2026-11-22T21:02:10.404334+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [
+        {
+          "id": 5,
+          "number": "PRODUCTION-GUIDE-20261123-PRODUCTION_START-000001",
+          "kind": "production_start",
+          "date": "2026-11-23"
+        }
+      ],
+      "attachments": []
+    },
+    "22-consume-b": {
+      "id": 7,
+      "kind": "production_consume",
+      "number": "PRODUCTION-GUIDE-20261123-PRODUCTION_CONSUME-000002",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 3,
+      "party": null,
+      "employee": null,
+      "reference": 5,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "batch": "5",
+        "warehouse": "3",
+        "inputs": [
+          {
+            "product": "2",
+            "quantity": "60"
+          }
+        ]
+      },
+      "result": {
+        "batch": 5,
+        "inputs": [
+          {
+            "product": 2,
+            "warehouse": 3,
+            "quantity": "60",
+            "cost": "6000.00"
+          }
+        ],
+        "wip_in": "6000.00",
+        "wip_out": "0.00"
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:02:15.063556+00:00",
+      "posted_at": "2026-11-22T21:02:15.214607+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [
+        {
+          "id": 5,
+          "number": "PRODUCTION-GUIDE-20261123-PRODUCTION_START-000001",
+          "kind": "production_start",
+          "date": "2026-11-23"
+        }
+      ],
+      "attachments": []
+    },
+    "24-return-a": {
+      "id": 8,
+      "kind": "material_return",
+      "number": "PRODUCTION-GUIDE-20261123-MATERIAL_RETURN-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 3,
+      "party": null,
+      "employee": null,
+      "reference": null,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "warehouse": "3",
+        "destination": "2",
+        "reason": "۲۰ کیلوگرام مواد الف استفاده نشده است؛ به گدام برمی‌گردد",
+        "lines": [
+          {
+            "product": "1",
+            "quantity": "20"
+          }
+        ]
+      },
+      "result": {
+        "source": 3,
+        "destination": 2,
+        "lines": [
+          {
+            "product": 1,
+            "quantity": "20",
+            "cost": "2000.000000"
+          }
+        ],
+        "consumed": false
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:02:23.034546+00:00",
+      "posted_at": "2026-11-22T21:02:23.202127+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "25-return-b": {
+      "id": 9,
+      "kind": "material_return",
+      "number": "PRODUCTION-GUIDE-20261123-MATERIAL_RETURN-000002",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 3,
+      "party": null,
+      "employee": null,
+      "reference": null,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "warehouse": "3",
+        "destination": "2",
+        "reason": "۲۰ کیلوگرام مواد ب استفاده نشده است؛ به گدام برمی‌گردد",
+        "lines": [
+          {
+            "product": "2",
+            "quantity": "20"
+          }
+        ]
+      },
+      "result": {
+        "source": 3,
+        "destination": 2,
+        "lines": [
+          {
+            "product": 2,
+            "quantity": "20",
+            "cost": "2000.000000"
+          }
+        ],
+        "consumed": false
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:02:29.045687+00:00",
+      "posted_at": "2026-11-22T21:02:29.186290+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "26-complete": {
+      "id": 10,
+      "kind": "production_complete",
+      "number": "PRODUCTION-GUIDE-20261123-PRODUCTION_COMPLETE-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 2,
+      "party": null,
+      "employee": null,
+      "reference": 5,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "batch": "5",
+        "warehouse": "2",
+        "allocated_cost": "12000",
+        "abnormal_loss": "1000",
+        "outputs": [
+          {
+            "product": "3",
+            "blocks": [
+              {
+                "length_mm": "2000",
+                "width_mm": "1000",
+                "height_mm": "1100",
+                "status": "curing"
+              }
+            ]
+          }
+        ]
+      },
+      "result": {
+        "batch": 5,
+        "outputs": [
+          {
+            "product": 3,
+            "product_name": "اسفنج 45 کیلو گرام",
+            "quantity": "110",
+            "cost": "11000.00",
+            "blocks": [
+              1
+            ]
+          }
+        ],
+        "wip_in": "0.00",
+        "wip_out": "12000.00",
+        "wip_remaining": "0.00",
+        "abnormal_loss": "1000.00"
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:02:35.165011+00:00",
+      "posted_at": "2026-11-22T21:02:35.330576+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [
+        {
+          "id": 5,
+          "number": "PRODUCTION-GUIDE-20261123-PRODUCTION_START-000001",
+          "kind": "production_start",
+          "date": "2026-11-23"
+        }
+      ],
+      "attachments": []
+    },
+    "28-quality": {
+      "id": 11,
+      "kind": "quality_release",
+      "number": "PRODUCTION-GUIDE-20261123-QUALITY_RELEASE-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": null,
+      "warehouse": null,
+      "party": null,
+      "employee": null,
+      "reference": null,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "block": "1",
+        "reason": "صرفاً نمونهٔ آموزشی: عمل‌آوری، ظاهر و اندازه با مسؤول کیفیت بررسی شد"
+      },
+      "result": {
+        "block": 1,
+        "status": "ready"
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:02:43.086490+00:00",
+      "posted_at": "2026-11-22T21:02:43.185289+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "29-trim": {
+      "id": 12,
+      "kind": "trim",
+      "number": "PRODUCTION-GUIDE-20261123-TRIM-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 2,
+      "party": null,
+      "employee": null,
+      "reference": null,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "block": "1",
+        "main_height_mm": "1000",
+        "top_height_mm": "40",
+        "bottom_height_mm": "40",
+        "loss_mm": "20",
+        "main_cost": "10000",
+        "outputs": [
+          {
+            "product": "4",
+            "quantity": "1",
+            "cost": "500"
+          },
+          {
+            "product": "5",
+            "quantity": "1",
+            "cost": "500"
+          }
+        ]
+      },
+      "result": {
+        "block": 1,
+        "main_height_mm": "1000",
+        "top_height_mm": "40",
+        "bottom_height_mm": "40",
+        "loss_mm": "20",
+        "outputs": [
+          {
+            "product": 4,
+            "product_name": "سربلوک 45 کیلو گرام",
+            "quantity": "1",
+            "cost": "500.00",
+            "blocks": []
+          },
+          {
+            "product": 5,
+            "product_name": "کف بلوک",
+            "quantity": "1",
+            "cost": "500.00",
+            "blocks": []
+          }
+        ],
+        "cost": "11000.000000",
+        "main_cost": "10000.00",
+        "abnormal_loss": "0.00"
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:02:48.980258+00:00",
+      "posted_at": "2026-11-22T21:02:49.153336+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "32-transfer": {
+      "id": 13,
+      "kind": "transfer_dispatch",
+      "number": "PRODUCTION-GUIDE-20261123-TRANSFER_DISPATCH-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 2,
+      "party": null,
+      "employee": null,
+      "reference": null,
+      "amount": "0.00",
+      "data": {
+        "date": "2026-11-23",
+        "warehouse": "2",
+        "destination": "4",
+        "internal_charge": "0",
+        "lines": [
+          {
+            "product": "3",
+            "quantity": "100",
+            "block": "1"
+          }
+        ]
+      },
+      "result": {
+        "lines": [
+          {
+            "index": 0,
+            "product": 3,
+            "quantity": "100.000",
+            "cost": "10000.000000",
+            "profile": "2000.000x1000.000",
+            "block": 1
+          }
+        ],
+        "source": 2,
+        "destination": 4,
+        "transit": 5,
+        "internal_charge": "0.00",
+        "status": "in_transit"
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:06:31.473952+00:00",
+      "posted_at": "2026-11-22T21:06:31.678450+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "34-receive-transfer": {
+      "id": 14,
+      "kind": "transfer_receive",
+      "number": "PRODUCTION-GUIDE-20261123-TRANSFER_RECEIVE-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 3,
+      "warehouse": 4,
+      "party": null,
+      "employee": null,
+      "reference": 13,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "transfer": "13",
+        "resolution": "shortage",
+        "reason": "",
+        "lines": [
+          {
+            "index": 0,
+            "quantity": "100"
+          }
+        ]
+      },
+      "result": {
+        "transfer": 13,
+        "lines": [
+          {
+            "index": 0,
+            "product": 3,
+            "quantity": "100",
+            "cost": "10000.000000",
+            "resolution": "receive"
+          }
+        ],
+        "remaining_quantity": "0.000",
+        "status": "received"
+      },
+      "product_lines": [
+        "sponge"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:06:38.770098+00:00",
+      "posted_at": "2026-11-22T21:06:38.941963+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [
+        {
+          "id": 13,
+          "number": "PRODUCTION-GUIDE-20261123-TRANSFER_DISPATCH-000001",
+          "kind": "transfer_dispatch",
+          "date": "2026-11-23"
+        }
+      ],
+      "attachments": []
+    },
+    "37-overhead": {
+      "id": 15,
+      "kind": "expense_post",
+      "number": "PRODUCTION-GUIDE-20261123-EXPENSE_POST-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": null,
+      "party": 1,
+      "employee": null,
+      "reference": null,
+      "amount": "500.00",
+      "data": {
+        "date": "2026-11-23",
+        "location": "2",
+        "amount": "500",
+        "expense_account": "COST_CLEARING",
+        "supplier": "1",
+        "description": "سربار نمونهٔ بچ چسپ؛ پرداخت نشده و باید فقط یک‌بار جذب شود",
+        "production_cost": true,
+        "line": "adhesive"
+      },
+      "result": {
+        "amount": "500.00",
+        "supplier": 1,
+        "payment_status": "unpaid"
+      },
+      "product_lines": [
+        "adhesive"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:17:45.475183+00:00",
+      "posted_at": "2026-11-22T21:17:45.578963+00:00",
+      "balance": "500.00",
+      "party_name": "تأمین‌کنندهٔ آموزشی مواد",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    },
+    "39-adhesive": {
+      "id": 16,
+      "kind": "production",
+      "number": "PRODUCTION-GUIDE-20261123-PRODUCTION-000001",
+      "state": "posted",
+      "date": "2026-11-23",
+      "location": 2,
+      "warehouse": 2,
+      "party": null,
+      "employee": null,
+      "reference": null,
+      "amount": "0",
+      "data": {
+        "date": "2026-11-23",
+        "warehouse": "2",
+        "labor_cost": "0",
+        "overhead_cost": "500",
+        "abnormal_loss": "0",
+        "planned_quantity": "1",
+        "conversion_sources": [
+          15
+        ],
+        "inputs": [
+          {
+            "product": "6",
+            "quantity": "20"
+          }
+        ],
+        "outputs": [
+          {
+            "product": "7",
+            "quantity": "20"
+          }
+        ],
+        "conversion_allocations": [
+          {
+            "document": 15,
+            "amount": "500.00",
+            "account": "COST_CLEARING"
+          }
+        ]
+      },
+      "result": {
+        "inputs": [
+          {
+            "product": 6,
+            "warehouse": 2,
+            "quantity": "20",
+            "cost": "2000.00"
+          }
+        ],
+        "outputs": [
+          {
+            "product": 7,
+            "product_name": "چسپ آموزشی",
+            "quantity": "20",
+            "cost": "2500.00",
+            "blocks": []
+          }
+        ],
+        "total_cost": "2500.00",
+        "wip_in": "2500.00",
+        "wip_out": "2500.00",
+        "abnormal_loss": "0.00",
+        "bom": null
+      },
+      "product_lines": [
+        "adhesive"
+      ],
+      "created_by": 1,
+      "created_at": "2026-11-22T21:18:07.506347+00:00",
+      "posted_at": "2026-11-22T21:18:07.828799+00:00",
+      "balance": null,
+      "party_name": "",
+      "employee_name": "",
+      "related_documents": [],
+      "attachments": []
+    }
+  },
+  "captures": [
+    {
+      "id": "01-business",
+      "title": "ایجاد تجارت آموزشی با مصرف واقعی",
+      "file": "01-business-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "02-context",
+      "title": "تجارت، تقویم و مسیر تولید",
+      "file": "02-context-screen.png",
+      "part": "screen",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "03-floor",
+      "title": "انبارها؛ نمونهٔ تکمیل‌شده",
+      "file": "03-floor-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "04-herat",
+      "title": "موقعیت‌ها؛ نمونهٔ تکمیل‌شده",
+      "file": "04-herat-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "05-herat-store",
+      "title": "انبارها؛ نمونهٔ تکمیل‌شده",
+      "file": "05-herat-store-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "06-raw-a",
+      "title": "محصولات و مواد؛ نمونهٔ تکمیل‌شده",
+      "file": "06-raw-a-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "07-raw-b",
+      "title": "محصولات و مواد؛ نمونهٔ تکمیل‌شده",
+      "file": "07-raw-b-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "08-sponge",
+      "title": "محصولات و مواد؛ نمونهٔ تکمیل‌شده",
+      "file": "08-sponge-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "09-top",
+      "title": "محصولات و مواد؛ نمونهٔ تکمیل‌شده",
+      "file": "09-top-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "10-bottom",
+      "title": "محصولات و مواد؛ نمونهٔ تکمیل‌شده",
+      "file": "10-bottom-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "11-raw-glue",
+      "title": "محصولات و مواد؛ نمونهٔ تکمیل‌شده",
+      "file": "11-raw-glue-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "12-glue",
+      "title": "محصولات و مواد؛ نمونهٔ تکمیل‌شده",
+      "file": "12-glue-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "13-supplier",
+      "title": "مشتریان و تأمین‌کنندگان؛ نمونهٔ تکمیل‌شده",
+      "file": "13-supplier-form-01.png",
+      "part": "form-01",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "13-supplier",
+      "title": "مشتریان و تأمین‌کنندگان؛ نمونهٔ تکمیل‌شده",
+      "file": "13-supplier-form-02.png",
+      "part": "form-02",
+      "url": "/settings?section=setup",
+      "synthetic_only": true
+    },
+    {
+      "id": "14-receipt",
+      "title": "رسید خرید؛ مواد و قیمت‌ها تکمیل شده",
+      "file": "14-receipt-form-01.png",
+      "part": "form-01",
+      "url": "/purchases",
+      "synthetic_only": true
+    },
+    {
+      "id": "14-receipt",
+      "title": "رسید خرید؛ مواد و قیمت‌ها تکمیل شده",
+      "file": "14-receipt-form-02.png",
+      "part": "form-02",
+      "url": "/purchases",
+      "synthetic_only": true
+    },
+    {
+      "id": "14-receipt",
+      "title": "رسید خرید؛ مواد و قیمت‌ها تکمیل شده",
+      "file": "14-receipt-form-03.png",
+      "part": "form-03",
+      "url": "/purchases",
+      "synthetic_only": true
+    },
+    {
+      "id": "15-receipt-result",
+      "title": "رسید واقعی و ورود مواد به موجودی",
+      "file": "14-receipt-result.png",
+      "part": "result",
+      "url": "/documents/1?business=2",
+      "synthetic_only": true
+    },
+    {
+      "id": "16-bill",
+      "title": "بل تأمین‌کننده بر اساس رسید",
+      "file": "16-bill-form-01.png",
+      "part": "form-01",
+      "url": "/purchases",
+      "synthetic_only": true
+    },
+    {
+      "id": "16-bill",
+      "title": "بل تأمین‌کننده بر اساس رسید",
+      "file": "16-bill-form-02.png",
+      "part": "form-02",
+      "url": "/purchases",
+      "synthetic_only": true
+    },
+    {
+      "id": "17-raw-stock",
+      "title": "موجودی مواد پس از رسید و بل",
+      "file": "17-raw-stock-screen.png",
+      "part": "screen",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "18-issue-a",
+      "title": "صدور ۸۰ کیلوگرام مواد الف به کف تولید",
+      "file": "18-issue-a-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "19-issue-b",
+      "title": "صدور ۸۰ کیلوگرام مواد ب به کف تولید",
+      "file": "19-issue-b-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "20-start",
+      "title": "آغاز بچ در جریان؛ بدون فرمول",
+      "file": "20-start-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "20-start",
+      "title": "انتخاب روش ثبت؛ هنوز ثبت نشده",
+      "file": "20-start-draft-mode.png",
+      "part": "draft-mode",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "20-start",
+      "title": "انتخاب روش ثبت؛ هنوز ثبت نشده",
+      "file": "20-start-approval-mode.png",
+      "part": "approval-mode",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "20-start",
+      "title": "انتخاب روش ثبت؛ هنوز ثبت نشده",
+      "file": "20-start-direct-mode.png",
+      "part": "direct-mode",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "21-consume-a",
+      "title": "ثبت مصرف واقعی ۶۰ کیلوگرام مواد الف",
+      "file": "21-consume-a-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "22-consume-b",
+      "title": "ثبت مصرف واقعی ۶۰ کیلوگرام مواد ب",
+      "file": "22-consume-b-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "23-wip",
+      "title": "بچ در مرحلهٔ خروجی؛ بهای در جریان ۱۲٬۰۰۰",
+      "file": "23-wip-screen.png",
+      "part": "screen",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "24-return-a",
+      "title": "برگشت ۲۰ کیلوگرام مواد استفاده‌نشدهٔ الف",
+      "file": "24-return-a-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "24-return-a",
+      "title": "برگشت ۲۰ کیلوگرام مواد استفاده‌نشدهٔ الف؛ تأیید خلاصه",
+      "file": "24-return-a-review.png",
+      "part": "review",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "25-return-b",
+      "title": "برگشت ۲۰ کیلوگرام مواد استفاده‌نشدهٔ ب",
+      "file": "25-return-b-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "25-return-b",
+      "title": "برگشت ۲۰ کیلوگرام مواد استفاده‌نشدهٔ ب؛ تأیید خلاصه",
+      "file": "25-return-b-review.png",
+      "part": "review",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "26-complete",
+      "title": "خروجی اندازه‌شده؛ یک بلوک و زیان غیرعادی آموزشی",
+      "file": "26-complete-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "26-complete",
+      "title": "خروجی اندازه‌شده؛ یک بلوک و زیان غیرعادی آموزشی",
+      "file": "26-complete-form-02.png",
+      "part": "form-02",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "27-curing",
+      "title": "بلوک در حال عمل‌آوری؛ هنوز به فروش نروید",
+      "file": "27-curing-screen.png",
+      "part": "screen",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "28-quality",
+      "title": "ثبت نتیجهٔ بررسی و آزادسازی کیفیت",
+      "file": "28-quality-form-01.png",
+      "part": "form-01",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "28-quality",
+      "title": "ثبت نتیجهٔ بررسی و آزادسازی کیفیت؛ تأیید خلاصه",
+      "file": "28-quality-review.png",
+      "part": "review",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "29-trim",
+      "title": "اصلاح بلوک، سربلوک، کف بلوک و ضایعات",
+      "file": "29-trim-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "29-trim",
+      "title": "اصلاح بلوک، سربلوک، کف بلوک و ضایعات",
+      "file": "29-trim-form-02.png",
+      "part": "form-02",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "30-ready",
+      "title": "بلوک نهایی ۱۰۰ سانتی‌متر؛ آماده فروش",
+      "file": "30-ready-screen.png",
+      "part": "screen",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "31-label",
+      "title": "برچسب واقعی بلوک و کد QR",
+      "file": "31-label-screen.png",
+      "part": "screen",
+      "synthetic_only": true
+    },
+    {
+      "id": "32-transfer",
+      "title": "ارسال بلوک کامل به گدام فروش هرات",
+      "file": "32-transfer-form-01.png",
+      "part": "form-01",
+      "url": "/transfers",
+      "synthetic_only": true
+    },
+    {
+      "id": "32-transfer",
+      "title": "ارسال بلوک کامل به گدام فروش هرات",
+      "file": "32-transfer-form-02.png",
+      "part": "form-02",
+      "url": "/transfers",
+      "synthetic_only": true
+    },
+    {
+      "id": "33-transit",
+      "title": "پس از ارسال؛ در مسیر، نه فروش",
+      "file": "33-transit-screen.png",
+      "part": "screen",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "34-receive-transfer",
+      "title": "تأیید دریافت ۱۰۰ سانتی‌متر در مقصد",
+      "file": "34-receive-transfer-form-01.png",
+      "part": "form-01",
+      "url": "/transfers",
+      "synthetic_only": true
+    },
+    {
+      "id": "35-herat-ready",
+      "title": "محصول با بهای قبلی در گدام فروش هرات",
+      "file": "35-herat-ready-screen.png",
+      "part": "screen",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "36-sale-preview",
+      "title": "پیش‌نمایش فروش ورق ۲۲ میلی‌متر؛ ثبت نکنید",
+      "file": "36-sale-preview-form-01.png",
+      "part": "form-01",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "36-sale-preview",
+      "title": "پیش‌نمایش فروش ورق ۲۲ میلی‌متر؛ ثبت نکنید",
+      "file": "36-sale-preview-form-02.png",
+      "part": "form-02",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "36-sale-preview",
+      "title": "پیش‌نمایش فروش ورق ۲۲ میلی‌متر؛ ثبت نکنید",
+      "file": "36-sale-preview-form-03.png",
+      "part": "form-03",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "37-overhead",
+      "title": "ثبت منبع واقعی سربار برای جذب در بچ",
+      "file": "37-overhead-form-01.png",
+      "part": "form-01",
+      "url": "/money",
+      "synthetic_only": true
+    },
+    {
+      "id": "37-overhead",
+      "title": "ثبت منبع واقعی سربار برای جذب در بچ",
+      "file": "37-overhead-form-02.png",
+      "part": "form-02",
+      "url": "/money",
+      "synthetic_only": true
+    },
+    {
+      "id": "38-simple-foam",
+      "title": "روش یک‌مرحله‌ای اسفنج؛ فقط نمونهٔ فورم، ثبت نشده",
+      "file": "38-simple-foam-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "38-simple-foam",
+      "title": "روش یک‌مرحله‌ای اسفنج؛ فقط نمونهٔ فورم، ثبت نشده",
+      "file": "38-simple-foam-form-02.png",
+      "part": "form-02",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "38-simple-foam",
+      "title": "روش یک‌مرحله‌ای اسفنج؛ فقط نمونهٔ فورم، ثبت نشده",
+      "file": "38-simple-foam-form-03.png",
+      "part": "form-03",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "39-adhesive",
+      "title": "تولید واقعی ۲۰ کیلوگرام چسپ با سربار مستند",
+      "file": "39-adhesive-form-01.png",
+      "part": "form-01",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "39-adhesive",
+      "title": "تولید واقعی ۲۰ کیلوگرام چسپ با سربار مستند",
+      "file": "39-adhesive-form-02.png",
+      "part": "form-02",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "39-adhesive",
+      "title": "تولید واقعی ۲۰ کیلوگرام چسپ با سربار مستند",
+      "file": "39-adhesive-form-03.png",
+      "part": "form-03",
+      "url": "/production",
+      "synthetic_only": true
+    },
+    {
+      "id": "40-final-stock",
+      "title": "موجودی نهایی اسفنج، چسپ، مواد و فرآورده‌های جانبی",
+      "file": "40-final-stock-stock-01.png",
+      "part": "stock-01",
+      "url": "/inventory",
+      "synthetic_only": true
+    },
+    {
+      "id": "40-final-stock",
+      "title": "موجودی نهایی اسفنج، چسپ، مواد و فرآورده‌های جانبی",
+      "file": "40-final-stock-stock-02.png",
+      "part": "stock-02",
+      "url": "/inventory",
+      "synthetic_only": true
+    }
+  ]
+}

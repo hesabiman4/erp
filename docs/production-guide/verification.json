@@ -1,0 +1,105 @@
+{
+  "database": "verify_production_guide_20261123",
+  "synthetic_only": true,
+  "business": 2,
+  "documents": 16,
+  "actual_ui_screenshots": 61,
+  "steps": 40,
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "check": "Raw A factory90kg",
+      "passed": true,
+      "observed": "90.000000"
+    },
+    {
+      "check": "Raw B factory90kg",
+      "passed": true,
+      "observed": "90.000000"
+    },
+    {
+      "check": "Raw adhesive factory30kg",
+      "passed": true,
+      "observed": "30.000000"
+    },
+    {
+      "check": "Floor unused stock fully returned",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "check": "Finished block ready1000mm in Herat",
+      "passed": true,
+      "observed": {
+        "height_mm": "1000.000",
+        "warehouse": 4,
+        "status": "ready"
+      }
+    },
+    {
+      "check": "Sponge100cm in Herat",
+      "passed": true,
+      "observed": "100.000000"
+    },
+    {
+      "check": "Saleable top1 and bottom1",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "check": "Adhesive20kg cost2500",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "check": "Inventory carrying value34500",
+      "passed": true,
+      "observed": "34500.000000"
+    },
+    {
+      "check": "Abnormal loss1000",
+      "passed": true,
+      "observed": "1000.00"
+    },
+    {
+      "check": "WIP GRNI conversion clearing all zero",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "check": "Supplier payable35500",
+      "passed": true,
+      "observed": "-35500.00"
+    },
+    {
+      "check": "No sale and no BOM",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "check": "Only adhesive one-shot actually posted",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "check": "Every posted journal balanced",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "check": "Whole trial balance balanced",
+      "passed": true,
+      "observed": "0.00"
+    },
+    {
+      "check": "Inventory control equals stock value",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "check": "Nonnegative physical stock",
+      "passed": true,
+      "observed": null
+    }
+  ]
+}

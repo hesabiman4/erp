@@ -1,0 +1,42 @@
+import {test,expect} from '@playwright/test';
+import {readFile} from 'node:fs/promises';
+import vm from 'node:vm';
+
+test('encrypted proposals survive reload, reject wrong keys and bind user/business without plaintext content',async({page})=>{
+ await page.goto('/');
+ const marker=`PRIVATE-NOTE-${Date.now()}`;const owner={userId:'99999991',businessId:'99999992'};
+ const result=await page.evaluate(async({marker,owner})=>{
+  const source='/src/offline-store.ts';const store=await import(source);const pass='Notebook-test!A7-long-passphrase';
+  await store.removeNotebook(owner);const opened=await store.createNotebook(owner,pass);
+  const draft={id:crypto.randomUUID(),kind:'quotation',date:'2026-11-02',warehouse:'',party:'',customer_note:marker,notes:'Synthetic private note',lines:[{product:'Grade 45 full sheet',quantity:'2.2',unit_price:'500',length_mm:'2000',width_mm:'1000'}],savedAt:new Date().toISOString()};
+  await store.saveNotebook(owner,opened.key,opened.salt,[draft]);
+  const blob=await store.encryptedExport(owner);const encrypted=await blob.text();
+  let wrong=false,cross=false;try{await store.unlockNotebook(owner,'incorrect-passphrase');}catch{wrong=true;}
+  try{await store.importEncryptedNotebook(encrypted,{...owner,businessId:'99999993'},pass);}catch{cross=true;}
+  return {encryptedContainsNote:encrypted.includes(marker),encryptedContainsProduct:encrypted.includes('Grade 45 full sheet'),wrong,cross,algorithmEnvelope:JSON.parse(encrypted).version};
+ },{marker,owner});
+ expect(result).toEqual({encryptedContainsNote:false,encryptedContainsProduct:false,wrong:true,cross:true,algorithmEnvelope:1});
+ await page.reload();
+ const restored=await page.evaluate(async({marker,owner})=>{const source='/src/offline-store.ts';const store=await import(source);const loaded=await store.unlockNotebook(owner,'Notebook-test!A7-long-passphrase');const original=await(await store.encryptedExport(owner)).text();await store.removeNotebook(owner);await store.importEncryptedNotebook(original,owner,'Notebook-test!A7-long-passphrase');const imported=await store.unlockNotebook(owner,'Notebook-test!A7-long-passphrase');await store.removeNotebook(owner);const changed=JSON.parse(original);const bytes=Uint8Array.from(atob(changed.ciphertext),character=>character.charCodeAt(0));bytes[0]^=1;changed.ciphertext=btoa(String.fromCharCode(...bytes));let damaged=false;try{await store.importEncryptedNotebook(JSON.stringify(changed),owner,'Notebook-test!A7-long-passphrase');}catch{damaged=true;}return {reloaded:loaded.drafts[0].customer_note===marker,imported:imported.drafts[0].customer_note===marker,damaged};},{marker,owner});
+ expect(restored).toEqual({reloaded:true,imported:true,damaged:true});
+});
+
+test('offline service worker bypasses every API, admin, mutation and external request',async()=>{
+ const source=await readFile('public/offline-sw.js','utf8');const listeners:Record<string,Function>={};const cached:string[]=[];
+ const context={self:{location:{origin:'http://127.0.0.1:8080'},addEventListener:(name:string,handler:Function)=>listeners[name]=handler},URL,Response,caches:{open:async()=>({match:async()=>undefined,put:async(request:any)=>cached.push(typeof request==='string'?request:request.url)})},fetch:async()=>new Response('asset',{status:200})};
+ vm.runInNewContext(source,context);
+ const cases=[['GET','/api/session/'],['GET','/api/documents/'],['GET','/api/attachments/7/'],['GET','/api/documents/7/print/'],['GET','/admin/'],['POST','/api/operations/sale/'],['POST','/assets/test.js'],['GET','https://example.com/private']];
+ for(const[method,path]of cases){let handled=false;listeners.fetch({request:{method,url:path.startsWith('http')?path:`http://127.0.0.1:8080${path}`,mode:'cors'},respondWith:()=>handled=true});expect(handled,`${method} ${path}`).toBe(false);}
+ let response:Promise<Response>|null=null;listeners.fetch({request:{method:'GET',url:'http://127.0.0.1:8080/assets/app.js',mode:'cors'},respondWith:(value:Promise<Response>)=>response=value});expect(response).not.toBeNull();await response;expect(cached).toEqual(['http://127.0.0.1:8080/assets/app.js']);
+});
+
+test('proposal entered during connection loss requires live catalog review and creates only one server draft',async({page,context})=>{
+ test.skip(process.env.ERP_DEMO_E2E!=='1','Creates a synthetic server draft only in the isolated QA instance.');test.setTimeout(180000);const base=process.env.ERP_E2E_BASE_URL||'http://127.0.0.1:5174';expect(base).toContain(':5174');const secrets=JSON.parse(await readFile(process.env.ERP_E2E_CREDENTIALS||'../.local/verify_ui_20261029-credentials.json','utf8'));
+ const operations:string[]=[];page.on('request',request=>{if(request.method()==='POST'&&/\/api\/operations\//.test(request.url()))operations.push(request.url());});await page.goto(base);await page.locator('input[name=username]').fill('owner');await page.locator('input[name=password]').fill(secrets.owner);await page.locator('button[type=submit]').click();await expect(page.locator('.sidebar')).toBeVisible();
+ const business=await page.locator('.business-switch select').inputValue();const catalog=await page.evaluate(async business=>{const response=await fetch('/api/catalog/',{headers:{'X-Business-ID':business}});return response.json();},business);const warehouse=catalog.warehouses.find((row:any)=>row.kind==='store');const party=catalog.parties.find((row:any)=>row.kind==='customer');const product=catalog.products.find((row:any)=>row.unit==='cm'&&row.kind==='finished');
+ await page.locator('.topbar .offline-entry').click();const notebook=page.locator('.offline-notebook');await notebook.getByRole('button',{name:'ساخت دفترچه خصوصی',exact:true}).click();await notebook.locator('input[name=notebook-passphrase]').fill('QA-only-notebook-strong!A8');await notebook.locator('input[name=notebook-passphrase-repeat]').fill('QA-only-notebook-strong!A8');await notebook.locator('form button[type=submit]').click();await expect(notebook.locator('.offline-toolbar')).toBeVisible();await context.setOffline(true);
+ await notebook.getByRole('button',{name:'پیشنهاد جدید',exact:true}).click();await notebook.locator('input[name=offline-customer]').fill('Synthetic interrupted connection proposal');await notebook.locator('input[name=offline-product-0]').fill('Requested grade 45 full-face sheet');await notebook.locator('input[name=offline-quantity-0]').fill('2.2');await notebook.locator('input[name=offline-unit_price-0]').fill(product.price);await notebook.locator('input[name=offline-length_mm-0]').fill('2000');await notebook.locator('input[name=offline-width_mm-0]').fill('1000');await notebook.getByRole('button',{name:'ذخیره رمزگذاری‌شده',exact:true}).click();await expect(notebook.locator('.offline-proposals')).toContainText('Synthetic interrupted connection proposal');expect(operations).toEqual([]);await context.setOffline(false);
+ await notebook.getByRole('button',{name:'بررسی و انتقال به پیش‌نویس سیستم',exact:true}).click();await expect(notebook.locator('.offline-review')).toBeVisible();await notebook.locator('select[name=review-warehouse]').selectOption(String(warehouse.id));await notebook.locator('select[name=review-party]').selectOption(String(party.id));await notebook.locator('select[name=review-product-0]').selectOption(String(product.id));const pending=page.waitForResponse(response=>response.url().endsWith('/api/documents/')&&response.request().method()==='POST');await notebook.getByRole('button',{name:'ثبت پیش‌نویس در سیستم',exact:true}).click();const response=await pending;expect(response.status()).toBe(201);const result=await response.json();expect(result.state).toBe('draft');expect(result.kind).toBe('quotation');await expect(notebook.locator('.offline-proposals')).toContainText(result.number);
+ const duplicated=await page.evaluate(async({business,requestBody,proposal})=>{const csrf=decodeURIComponent(document.cookie.split('; ').find(row=>row.startsWith('csrftoken='))?.split('=')[1]||'');const repeated=await fetch('/api/documents/',{method:'POST',headers:{'X-Business-ID':business,'X-CSRFToken':csrf,'Content-Type':'application/json','Idempotency-Key':`offline-draft-${proposal}`},body:requestBody});return {status:repeated.status,data:await repeated.json()};},{business,requestBody:response.request().postData()!,proposal:result.data.offline_reference});expect(duplicated.status).toBe(200);expect(duplicated.data.id).toBe(result.id);expect(operations).toEqual([]);
+ await page.screenshot({path:'../.local/design/offline-reviewed-server-draft.png',fullPage:true});
+});

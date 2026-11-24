@@ -1,0 +1,30 @@
+import './print-profile-copy';
+import './print-profile-extensions.css';
+import {useState} from 'react';
+import {Plus,Trash2} from 'lucide-react';
+import {Field,ErrorNotice} from './ui';
+import type {Row} from './api';
+import {l} from './localize';
+
+export const printFamilies=[['invoice','بل فروش'],['quotation','نرخ‌دهی'],['order','سفارش خرید / فروش'],['receipt','رسید دریافت / پرداخت'],['purchase_bill','بل تأمین‌کننده'],['payroll','اسناد معاش'],['transfer','اسناد انتقال'],['other','سایر اسناد']];
+export const printLanguages=[{value:'bilingual',label:'دری و انگلیسی'},{value:'fa',label:'دری'},{value:'ps',label:'پښتو'},{value:'en',label:'English'}];
+
+export function PrintProfileExtensions({value:v,onChange,family,onFamilyChange,onLogo}:{value:Row,onChange:(value:Row)=>void,family:string,onFamilyChange:(value:string)=>void,onLogo:(data:string)=>void}){
+ const[error,setError]=useState('');const templates=v.document_templates||{},template=templates[family]||{},printers:Row[]=v.printer_profiles||[];
+ const setTemplate=(key:string,value:unknown)=>onChange({...v,document_templates:{...templates,[family]:{...template,[key]:value}}});
+ const setPrinter=(index:number,key:string,value:unknown)=>onChange({...v,printer_profiles:printers.map((p,i)=>i===index?{...p,[key]:value}:p)});
+ return <div className="print-profile-extensions">
+  <h3>{l('نشان شرکت و زبان سند')}</h3><Field field={{key:'document_language',label:'زبان پیش‌فرض سند',type:'select',required:true,options:printLanguages}} value={v.document_language||'bilingual'} onChange={value=>onChange({...v,document_language:value})}/>
+  <label className="field"><span>{l('نشان شرکت (PNG یا JPEG)')}</span><input type="file" accept="image/png,image/jpeg" onChange={async e=>{const file=e.target.files?.[0];e.currentTarget.value='';if(!file)return;setError('');try{if(!['image/png','image/jpeg'].includes(file.type)||file.size>5000000)throw Error(l('عکس PNG یا JPEG حداکثر پنج میگابایت را انتخاب کنید.'));const bitmap=await createImageBitmap(file);const factor=Math.min(1,400/Math.max(bitmap.width,bitmap.height));const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(bitmap.width*factor));canvas.height=Math.max(1,Math.round(bitmap.height*factor));canvas.getContext('2d')!.drawImage(bitmap,0,0,canvas.width,canvas.height);bitmap.close();const data=canvas.toDataURL('image/png');if(data.length>330000)throw Error(l('عکس نشان بزرگ است؛ یک عکس ساده‌تر انتخاب کنید.'));onLogo(data);}catch(err){setError(err instanceof Error?err.message:String(err));}}}/></label>
+  {v.logo_data_url&&<div className="print-logo-preview"><img src={v.logo_data_url} alt={l('پیش‌نمایش نشان شرکت')}/><button className="button secondary small" type="button" onClick={()=>onChange({...v,logo_data_url:''})}>{l('حذف نشان')}</button></div>}{error&&<ErrorNotice error={error}/>}
+  <p className="settings-hint">{l('تغییر زبان فقط عنوان‌ها و راهنمای چاپ را تغییر می‌دهد؛ نام، یادداشت، مبالغ و معلومات اصلی ترجمه یا بازنویسی نمی‌شود. عنوان‌های تخصصی ترجمه‌نشده ممکن است دو زبانه باقی بماند.')}</p>
+  <h3>{l('تنظیم جدا برای هر نوع سند')}</h3><Field field={{key:'print-family',label:'نوع سند برای تنظیم',type:'select',required:true,options:printFamilies.map(([value,label])=>({value,label}))}} value={family} onChange={onFamilyChange}/>
+  <p className="settings-hint">{l('خانه خالی از تنظیم عمومی پیروی می‌کند. قلم، مقدار، قیمت، مالیه و مانده مالی از سند اصلی گرفته می‌شود و با این تنظیم حذف نمی‌شود.')}</p>
+  <div className="form-grid">{[{key:'title_dari',label:'عنوان اختصاصی به دری'},{key:'title_english',label:'عنوان اختصاصی به انگلیسی'},{key:'title_pashto',label:'عنوان اختصاصی به پشتو'}].map(f=><Field key={f.key} field={f} value={template[f.key]||''} onChange={value=>setTemplate(f.key,value)}/>)}<Field field={{key:'template-paper',label:'کاغذ این نوع سند',type:'select',options:[{value:'',label:'پیروی از تنظیم عمومی'},{value:'A4',label:'A4'},{value:'80mm',label:'رسید حرارتی ۸۰ میلی‌متر'}]}} value={template.paper||''} onChange={value=>setTemplate('paper',value)}/></div>
+  {[{key:'footer',label:'متن پایین مخصوص این سند'},{key:'payment_instructions',label:'راهنمای پرداخت مخصوص این سند'}].map(f=><Field key={f.key} field={{...f,type:'textarea'}} value={template[f.key]||''} onChange={value=>setTemplate(f.key,value)}/>)}
+  <button className="button secondary small" type="button" onClick={()=>{const next={...templates};delete next[family];onChange({...v,document_templates:next});}}>{l('بازگشت این نوع سند به تنظیم عمومی')}</button>
+  <h3>{l('پروفایل‌های کاغذ و چاپگر')}</h3><p className="settings-hint">{l('این پروفایل‌ها کاغذ و حاشیه را تنظیم می‌کند. انتخاب چاپگر واقعی و تعداد کاپی در پنجره چاپ مرورگر است؛ ارسال خودکار به دستگاه ادعا نمی‌شود.')}</p>
+  {printers.map((p,index)=><section className="printer-profile-editor" key={p.id}><div className="form-grid"><Field field={{key:`printer-name-${index}`,label:'نام پروفایل چاپ',required:true}} value={p.name} onChange={value=>setPrinter(index,'name',value)}/><Field field={{key:`printer-paper-${index}`,label:'کاغذ چاپگر',type:'select',required:true,options:[{value:'A4',label:'A4'},{value:'80mm',label:'80 mm'}]}} value={p.paper} onChange={value=>setPrinter(index,'paper',value)}/><Field field={{key:`printer-margin-${index}`,label:'حاشیه چاپ (mm)',type:'number',required:true}} value={p.margin_mm} onChange={value=>setPrinter(index,'margin_mm',Number(value))}/><Field field={{key:`printer-hardware-${index}`,label:'یادداشت دستگاه / محل'}} value={p.hardware_note||''} onChange={value=>setPrinter(index,'hardware_note',value)}/></div><button className="icon-button danger" type="button" aria-label={l('حذف پروفایل چاپ')} onClick={()=>onChange({...v,printer_profiles:printers.filter((_,i)=>i!==index)})}><Trash2 size={17}/></button></section>)}
+  <button className="button secondary" type="button" disabled={printers.length>=8} onClick={()=>onChange({...v,printer_profiles:[...printers,{id:'printer-'+crypto.randomUUID().slice(0,18),name:'',paper:'A4',margin_mm:14,hardware_note:''}]})}><Plus size={16}/>{l('افزودن پروفایل چاپ')}</button>
+ </div>;
+}

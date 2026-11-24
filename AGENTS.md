@@ -1,0 +1,1 @@
+Implement ERP_AI_CODER_MASTER_PROMPT.md. Preserve stock, accounting, and business isolation invariants. Domain services live in backend/erp; all financial posting uses core.execute and core.journal. Test against PostgreSQL. Keep docs/IMPLEMENTATION_STATUS.md and docs/HANDOFF.md factual. Never replace missing functionality with demo arrays or silent successful responses.

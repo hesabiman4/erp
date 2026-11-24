@@ -1,0 +1,21 @@
+"""Dari/Pashto API errors for the tax schedule boundary."""
+TAX_ERROR_COPY={
+ 'Select a tax revision belonging to this business.':('نسخهٔ مالیاتی مربوط همین تجارت را انتخاب کنید.','د همدې سوداګرۍ مالیاتي نسخه وټاکئ.'),
+ 'Review the tax schedule fields, dates, source and exact decimal brackets.':('خانه‌ها، تاریخ‌ها، منبع و طبقه‌های عددی نسخهٔ مالیاتی را بررسی کنید.','د مالیاتي نسخې ډګرونه، نېټې، سرچینه او عددي پوړونه وګورئ.'),
+ 'Tax schedule access requires accounting permission.':('برای مشاهدهٔ نسخه‌های مالیاتی، صلاحیت حسابداری لازم است.','د مالیاتي نسخو لیدل د حسابدارۍ صلاحیت غواړي.'),
+ 'Tax configuration requires full business scope.':('تنظیم مالیه به دسترسی تمام موقعیت‌ها و خطوط همین تجارت نیاز دارد.','د مالیې تنظیم د همدې سوداګرۍ ټولو موقعیتونو او برخو ته لاسرسی غواړي.'),
+ 'This tax request key was used for different content.':('شناسهٔ این درخواست قبلاً برای محتوای دیگری استفاده شده است.','د دې غوښتنې پېژندنه مخکې د بل محتوا لپاره کارول شوې ده.'),
+ 'Explain the tax source review and applicability in at least eight characters.':('دلیل بررسی منبع و قابل اجرا بودن مالیه را با حداقل هشت حرف بنویسید.','د مالیې د سرچینې د کتنې او پلي کېدو دلیل لږ تر لږه په اتو تورو ولیکئ.'),
+ 'Use a new tax schedule version; existing revisions are retained.':('شناسهٔ نسخهٔ تازه را بنویسید؛ نسخه‌های قبلی محفوظ می‌ماند.','د نوې نسخې پېژندنه ولیکئ؛ پخوانۍ نسخې ساتل کېږي.'),
+ 'This tax schedule already has that confirmation state.':('این نسخهٔ مالیاتی از قبل همین حالت تأیید را دارد.','دا مالیاتي نسخه لا له مخکې همدا تایید حالت لري.'),
+ 'Confirm this tax schedule before using it for calculation.':('پیش از استفاده در محاسبه، این نسخهٔ مالیاتی را تأیید کنید.','په محاسبه کې له کارولو مخکې دا مالیاتي نسخه تایید کړئ.'),
+ 'No confirmed tax schedule applies to this date and sector.':('برای این تاریخ و بخش، نسخهٔ مالیاتی تأییدشده موجود نیست.','د دې نېټې او برخې لپاره تایید شوې مالیاتي نسخه نشته.'),
+ 'Tax schedules overlap for this date; review the version explicitly.':('برای این تاریخ چند نسخه مؤثر است؛ نسخهٔ مورد نظر را به‌صورت مشخص بررسی کنید.','د دې نېټې لپاره څو نسخې اغېزمنې دي؛ اړونده نسخه په څرګند ډول وڅېړئ.'),
+ 'This tax confirmation changed. Reload its history before deciding.':('حالت تأیید تغییر کرده است؛ پیش از تصمیم، سابقه را دوباره بارگذاری کنید.','د تایید حالت بدل شوی؛ له پرېکړې مخکې مخینه بیا راواخلئ.'),
+ 'Permission required: accounting.tax_manage':('صلاحیت مدیریت نسخه‌های مالیاتی لازم است.','د مالیاتي نسخو د مدیریت صلاحیت اړین دی.'),
+ 'Permission required: accounting.tax_confirm':('صلاحیت تأیید نسخه‌های مالیاتی لازم است.','د مالیاتي نسخو د تایید صلاحیت اړین دی.'),
+ 'Permission required: accounting.tax_override':('صلاحیت انتخاب استثنایی نسخهٔ مالیاتی لازم است.','د مالیاتي نسخې د استثنايي ټاکلو صلاحیت اړین دی.'),
+ 'Select a valid tax history offset.':('صفحهٔ معتبر سابقهٔ مالیه را انتخاب کنید.','د مالیې د مخینې معتبره پاڼه وټاکئ.'),
+ 'Select a valid tax schedule type.':('نوع معتبر مالیه را انتخاب کنید.','د مالیې معتبر ډول وټاکئ.'),
+ 'Select a valid tax schedule action.':('عمل معتبر نسخهٔ مالیاتی را انتخاب کنید.','د مالیاتي نسخې معتبره چاره وټاکئ.'),
+}

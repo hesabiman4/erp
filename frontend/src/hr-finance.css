@@ -1,0 +1,41 @@
+.employee-workspaces{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:18px;flex-wrap:wrap}
+.employee-workspaces .tabs{margin:0}.employee-workspaces .search-input{width:280px;max-width:100%}
+.employee-profile-form{padding:0 25px!important}.employee-form-section{padding:20px 0;border-bottom:1px solid var(--line)}
+.employee-form-section h3{display:flex;gap:9px;align-items:center;font-size:15px;margin:0 0 19px;color:#24415a}
+.employee-form-section .form-grid{gap:17px 23px}.employee-profile-form .form-footer{margin-bottom:0}.employee-profile-form>.error-notice{margin-top:15px}
+.employee-profile-view .party-contact-details>div{grid-template-columns:190px 1fr}.employee-profile-view .document-actions{padding:0 22px 20px}
+.comparison-controls{padding:13px 20px;background:#fafbfd;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.comparison-controls .check-field{margin:0;font-size:12px;display:flex;align-items:center;gap:8px}
+.comparison-controls>input{width:145px;padding:6px;border:1px solid var(--line);border-radius:5px;background:white;font-size:12px}
+.financial-statement{padding:24px 28px;color:#1d324a;background:white}
+.financial-statement-heading{text-align:center;border-bottom:2px solid #24445c;padding:0 5px 18px;margin-bottom:13px}
+.financial-statement-heading h2{font-size:19px;margin:0 0 5px}.financial-statement-heading h3{font-size:16px;margin:0 0 7px}.financial-statement-heading p{font-size:11px;color:#6f8296;margin:0}
+.financial-statement table{width:100%;font-size:12px}.financial-statement th,.financial-statement td{padding:10px 12px;background:white}
+.financial-statement thead th{background:#f3f6f9;font-size:11px;font-weight:600;text-align:end}
+.financial-statement thead th:first-child,.financial-statement thead th:nth-child(2){text-align:start}
+.financial-statement tbody th{text-align:start;font-weight:400;font-size:12px;color:#324d66}
+.financial-statement tbody td:not(:first-child){text-align:end;white-space:nowrap;font-variant-numeric:tabular-nums}
+.financial-statement tbody td:first-child{font-size:10px;color:#7489a0;width:65px}
+.financial-statement tbody th{min-width:150px}
+.financial-statement tr.statement-group th{background:#f2f6f8;border:0;font-weight:700;padding:13px 12px 10px;font-size:13px}
+.financial-statement tr.statement-section-total>*{border-top:1px solid #cdd9e2;border-bottom:1px solid #dce5eb;font-weight:600;background:#fcfdfe}
+.financial-statement tr.statement-subtotal>*{border-top:2px solid #839aaf;border-bottom:3px double #839aaf;font-weight:750;background:#eaf4f5;padding-block:13px;color:#143848}
+.statement-check{display:flex;flex-direction:column;gap:7px;text-align:center;padding:20px 10px;background:#f4faf7;border:1px solid #d6e8dc;margin-top:20px;border-radius:6px;font-size:12px}
+.statement-check strong{font-size:17px}.statement-check small{font-size:11px;color:#537260}.statement-check.unbalanced{border-color:#d49b9b;background:#fff4f4}
+.financial-statement .ledger-note{padding:16px 0 0;font-size:10px}
+@media print{.accounting-reports-page>.advanced-actions,.accounting-reports-page>.panel{display:none!important}.accounting-reports-page:has(.financial-statement)>.section-head{display:none!important}}
+@media print{
+ @page{margin:12mm}
+ html,body,.main-shell,.workspace{background:white!important}
+ .financial-statement{line-height:1.4}
+ .financial-statement-heading{padding-bottom:10px;margin-bottom:9px}
+ .financial-statement-heading h2{font-size:17px}.financial-statement-heading h3{font-size:14px}
+ .financial-statement tbody th,.financial-statement td{padding:5px 8px;font-size:11px}
+ .financial-statement tr.statement-group th{padding:8px;font-size:12px}
+ .financial-statement tr.statement-subtotal>*{padding:8px;font-size:11px}
+ .statement-check{break-inside:avoid;margin-top:10px;padding:10px;gap:4px}
+ .statement-check strong{font-size:14px}.financial-statement .ledger-note{padding-top:10px;font-size:9px}
+ .financial-statement .statement-check,.financial-statement>.ledger-note{display:none!important}
+}
+@media(max-width:650px){.employee-profile-form{padding:0 15px!important}.employee-profile-view .party-contact-details>div{grid-template-columns:130px 1fr;gap:10px}.employee-workspaces .tabs{overflow:auto;max-width:100%;display:flex;flex-wrap:nowrap}.employee-workspaces .tabs button{white-space:nowrap;font-size:11px}.employee-workspaces .search-input{width:100%}.financial-statement{padding:19px 12px}.financial-statement .table-wrap{margin:0}.financial-statement-heading h2{font-size:17px}.financial-statement th,.financial-statement td{padding:9px 8px}.financial-statement tbody th{min-width:125px}.comparison-controls{padding:12px}.comparison-controls>input{width:130px}.statement-check strong{font-size:14px}}
+@media print{.comparison-controls{display:none!important}.financial-statement{padding:0;break-inside:auto!important}.financial-statement-heading{break-after:avoid}.financial-statement .table-wrap{overflow:visible}.financial-statement table{font-size:10px}.financial-statement thead{display:table-header-group}.financial-statement tr{break-inside:avoid}.report-layout>.panel:has(.financial-statement){border:0;break-inside:auto}.report-layout>.panel:has(.financial-statement)>.panel-header{display:none}.financial-statement tbody th,.financial-statement td{font-size:10px;padding:7px}.financial-statement tr.statement-group{break-after:avoid}}

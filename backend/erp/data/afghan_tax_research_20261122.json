@@ -1,0 +1,134 @@
+[
+  {
+    "name_fa": "معاش ماهانه؛ جدول قبلی — پژوهشی",
+    "name_en": "Monthly salary — prior schedule (research)",
+    "name_ps": "میاشتنی معاش — پخوانی جدول، څېړنیز",
+    "tax_type": "salary_wht",
+    "sector": "general",
+    "schedule_version": "AF-SALARY-2026-OLD",
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-07-10",
+    "currency_code": "AFN",
+    "basis": "monthly_payroll",
+    "rate": null,
+    "brackets": [
+      {
+        "lower": "0",
+        "rate": "0",
+        "fixed": "0"
+      },
+      {
+        "lower": "5000",
+        "rate": "2",
+        "fixed": "0"
+      },
+      {
+        "lower": "12500",
+        "rate": "10",
+        "fixed": "150"
+      },
+      {
+        "lower": "100000",
+        "rate": "20",
+        "fixed": "8900"
+      }
+    ],
+    "rounding_places": 2,
+    "source_url": "https://questfinancial.af/wp-content/uploads/2026/07/Guidelines-on-the-Application-of-Tax-Reliefs-and-Adjustments_July_2026.pdf",
+    "source_retrieved_on": "2026-11-22",
+    "notes": "نسخهٔ پژوهشی؛ تطبیق بر این تجارت و حالت اظهارنامه باید توسط حسابدار تأیید شود. تأیید این نسخه به معنی فعال‌سازی مالیهٔ خودکار نیست. شروع ۲۰۲۶/۰۱/۰۱ فقط محدودهٔ پژوهش این نسخه است، نه تاریخ وضع قانون. برای دورهٔ قدیمی‌تر نسخهٔ مستند جدا ثبت شود. حالت نهایی شدن اظهارنامه ممکن است جدول متفاوت بخواهد.",
+    "supersedes": null
+  },
+  {
+    "name_fa": "معاش ماهانه؛ اصلاحات سرطان ۱۴۰۵ — پژوهشی",
+    "name_en": "Monthly salary — July 2026 reform (research)",
+    "name_ps": "میاشتنی معاش — د ۱۴۰۵ چنګاښ اصلاحات، څېړنیز",
+    "tax_type": "salary_wht",
+    "sector": "general",
+    "schedule_version": "AF-SALARY-2026-07",
+    "effective_from": "2026-07-11",
+    "effective_to": null,
+    "currency_code": "AFN",
+    "basis": "monthly_payroll",
+    "rate": null,
+    "brackets": [
+      {
+        "lower": "0",
+        "rate": "0",
+        "fixed": "0"
+      },
+      {
+        "lower": "10000",
+        "rate": "10",
+        "fixed": "0"
+      },
+      {
+        "lower": "100000",
+        "rate": "15",
+        "fixed": "9000"
+      }
+    ],
+    "rounding_places": 2,
+    "source_url": "https://questfinancial.af/wp-content/uploads/2026/07/Guidelines-on-the-Application-of-Tax-Reliefs-and-Adjustments_July_2026.pdf",
+    "source_retrieved_on": "2026-11-22",
+    "notes": "نسخهٔ پژوهشی؛ تطبیق بر این تجارت و حالت اظهارنامه باید توسط حسابدار تأیید شود. تأیید این نسخه به معنی فعال‌سازی مالیهٔ خودکار نیست. تاریخ اجرای عمومی ۲۰۲۶/۰۷/۱۱ است؛ انتخاب صرفاً بر اساس تاریخ کسب معاش کافی نیست و حالت اظهارنامه/تشخیص باید بررسی شود.",
+    "supersedes": null
+  },
+  {
+    "name_fa": "مالیه عایدات شرکت؛ عمومی — پژوهشی",
+    "name_en": "Corporate income tax — general (research)",
+    "name_ps": "د شرکت پر عایداتو مالیه — عمومي، څېړنیز",
+    "tax_type": "cit",
+    "sector": "general",
+    "schedule_version": "AF-CIT-2026-GENERAL",
+    "effective_from": "2026-07-11",
+    "effective_to": null,
+    "currency_code": "AFN",
+    "basis": "net_taxable_profit",
+    "rate": "10",
+    "brackets": [],
+    "rounding_places": 2,
+    "source_url": "https://questfinancial.af/wp-content/uploads/2026/07/Guidelines-on-the-Application-of-Tax-Reliefs-and-Adjustments_July_2026.pdf",
+    "source_retrieved_on": "2026-11-22",
+    "notes": "نسخهٔ پژوهشی؛ تطبیق بر این تجارت و حالت اظهارنامه باید توسط حسابدار تأیید شود. تأیید این نسخه به معنی فعال‌سازی مالیهٔ خودکار نیست.",
+    "supersedes": null
+  },
+  {
+    "name_fa": "مالیه عایدات شرکت؛ معادن — پژوهشی",
+    "name_en": "Corporate income tax — mining (research)",
+    "name_ps": "د شرکت پر عایداتو مالیه — کانونه، څېړنیز",
+    "tax_type": "cit",
+    "sector": "mining",
+    "schedule_version": "AF-CIT-2026-MINING",
+    "effective_from": "2026-07-11",
+    "effective_to": null,
+    "currency_code": "AFN",
+    "basis": "net_taxable_profit",
+    "rate": "20",
+    "brackets": [],
+    "rounding_places": 2,
+    "source_url": "https://questfinancial.af/wp-content/uploads/2026/07/Guidelines-on-the-Application-of-Tax-Reliefs-and-Adjustments_July_2026.pdf",
+    "source_retrieved_on": "2026-11-22",
+    "notes": "نسخهٔ پژوهشی؛ تطبیق بر این تجارت و حالت اظهارنامه باید توسط حسابدار تأیید شود. تأیید این نسخه به معنی فعال‌سازی مالیهٔ خودکار نیست.",
+    "supersedes": null
+  },
+  {
+    "name_fa": "پیش‌پرداخت مالیه عایدات گمرک — پژوهشی",
+    "name_en": "Customs advance income tax (research)",
+    "name_ps": "د ګمرک د عایداتو مالیې مخکېنۍ ورکړه، څېړنیز",
+    "tax_type": "import_income_advance",
+    "sector": "general",
+    "schedule_version": "AF-IMPORT-INCOME-2026",
+    "effective_from": "2026-07-11",
+    "effective_to": null,
+    "currency_code": "AFN",
+    "basis": "import_value",
+    "rate": "2",
+    "brackets": [],
+    "rounding_places": 2,
+    "source_url": "https://questfinancial.af/wp-content/uploads/2026/07/Guidelines-on-the-Application-of-Tax-Reliefs-and-Adjustments_July_2026.pdf",
+    "source_retrieved_on": "2026-11-22",
+    "notes": "نسخهٔ پژوهشی؛ تطبیق بر این تجارت و حالت اظهارنامه باید توسط حسابدار تأیید شود. تأیید این نسخه به معنی فعال‌سازی مالیهٔ خودکار نیست. اعتبار مالیه عایدات است؛ با اعتبار مالیه عواید ناخالص واردات مخلوط نشود.",
+    "supersedes": null
+  }
+]

@@ -1,0 +1,50 @@
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: sponge_erp
+      POSTGRES_USER: erp_dev
+      POSTGRES_PASSWORD: ${PGPASSWORD:?Provide a local PostgreSQL password in an env file}
+    volumes:
+      - database:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U erp_dev -d sponge_erp"]
+      interval: 5s
+      retries: 12
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:?Provide a local Django secret}
+      PGDATABASE: sponge_erp
+      PGUSER: erp_dev
+      PGPASSWORD: ${PGPASSWORD}
+      PGHOST: db
+      PGPORT: 5432
+      DJANGO_DEBUG: "1"
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1,api
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - private_media:/app/.local/media
+  web:
+    image: node:22-alpine
+    working_dir: /app/frontend
+    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0"
+    environment:
+      VITE_PROXY_TARGET: http://api:8000
+    volumes:
+      - ./frontend:/app/frontend
+      - frontend_deps:/app/frontend/node_modules
+    ports:
+      - "127.0.0.1:5173:5173"
+    depends_on:
+      - api
+volumes:
+  database:
+  private_media:
+  frontend_deps:
